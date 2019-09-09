@@ -15,6 +15,11 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendors/themify-icons/themify-icons.css') }}">
+    <style type="text/css">
+        button.btn > a > i{
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
