@@ -1,0 +1,391 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+
+#intro{
+	width:100%;
+	.intro{
+		background-image: url("../images/cnb-openaccount-home.jpg");
+		background-position: 0% 90%;
+		min-height: 560px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media screen and (max-width: 37em){
+			background-position: 99% 0%;
+		}
+		.wrapper{
+			padding: 15% 0px;
+			text-align: center;
+			@media screen and (max-width: 37em){
+				padding-top: 25px;
+			    padding-left: 0px;
+			    padding-right: 0px;
+			    text-align: center;
+			}
+			button{
+				text-transform: uppercase;
+				color: #ffffff;
+				&.btn-canadia{
+					background-color: #ef5350;
+				}
+			}
+		}
+	}
+}
+
+#account-types{
+	width:100%;
+	.account-types{
+		display: flex;
+		@media screen and (max-width: 37.5em){
+			display: block;
+			width: 100%;
+		}
+		.type{
+			min-height: 600px;
+			position: relative;
+			width: 100%;
+			@media screen and (max-width: 37.5em){
+				min-height: 100%;
+			}
+			.wrapper{
+				
+			}
+			
+			.background-option1,
+			.background-option2{
+				height: 60%;
+				// min-height: 100%;
+				background-position: 50%;
+				@media screen and (max-width: 37.5em){
+					min-height: 250px;
+				}
+			}
+			.background-option2{
+				background-image: url("../images/growyourmoneysmall_01.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.background-option1{
+				background-image: url("../images/dailyneedssmall.jpg");
+				background-size: cover;
+				background-repeat: no-repeat; 
+			}
+			.content{
+				height: 40%;				
+				color: #ffffff;
+				text-align: center;
+				.wrapper{
+					width: 61%;
+					margin: 0px auto 0px;
+					padding-bottom: 30px;
+					@media screen and (max-width: 37.5em){
+						width: 90%;
+					}
+					p,h1,h2,button{
+						padding: 10px 0px;
+						color: #ffffff;
+					}
+					h2,
+					h1{
+						padding: 30px 0px 15px;
+					}
+					button{
+						background:none;
+					}
+					.btn-canadia{
+						text-transform: uppercase;
+						padding: 5px 15px;
+						border: 2px solid #ffffff !important;
+					    background-color: inherit !important;
+					}
+				}				
+			}
+		}
+	}
+}
+.btn{
+	text-transform: uppercase;
+}
+
+#type-dialy-need,
+#type-grow-need{
+	width: 100%;
+	padding: 30px 0px;	
+	.card{
+		img{
+			max-width: 70px;
+		    text-align: center;
+		    margin: 30px auto 10px;
+		}
+	}
+	.card-body{
+		text-align: center;
+		min-height: 246px;		
+		button{
+			width: 91%;
+		    bottom: 15px;
+		    position: absolute;
+		    right: 15px;
+		    left: 15px;
+		}
+	}
+}
+#type-dialy-need{
+	background-image: url("../images/dailyneedssmall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#type-grow-need{
+	background-image: url("../images/growyourmoneysmall_01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.modal-body{
+	img{
+		float: left;
+		width: 40%;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.get-help{
+		width:100%;
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width: 37.5em){
+			display: block;
+		}
+		.inner{
+			width:49%;
+			@media screen and (max-width: 37.5em){
+				width: 100%;
+			}
+			img{
+				float: none;
+				width: 100%;
+				max-width: 80px;
+				margin: 15px auto 30px;
+			}
+		}
+	}
+	table{
+		&.account-feature{
+			width:100%;
+			tr{
+				td{
+					border-bottom: 1px solid #dee2e6; 
+					border-top: 0px;
+					img{
+						width: 38px;
+					}
+					&:first-child{
+						width: 38px;
+					}
+					&:last-child{
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+		&.account-condition{
+			td{
+				border-bottom: 1px solid #dee2e6; 
+				border-top: 0px;
+			}
+			ul{
+				li{
+					padding: 0px !important;
+				}
+			}
+		}
+	}
+}
+#saving_account,
+#current_account,
+#current_plus,
+#fixed_deposit{
+	.modal-body{
+		padding: 0px;
+		ul{
+			li{
+				padding: 1rem;
+				a{
+					text-decoration: none;
+					text-transform: uppercase;
+					padding-bottom: 1rem;
+					&.active{
+						border-bottom: 2px solid #ef5350;
+					}
+				}				
+			}
+		}
+	}
+	.tab-content{
+		padding: 1rem;
+	}
+}
+
+.image-block{
+	width: 40%;
+	float: left;
+	img{
+		width: 100%;
+	}
+}
+.modal-content{
+	border-radius: 0px;
+}
+.modal-content-block{
+	width: 58%;
+	float: left;
+	margin-left: 15px;
+}
+
+a{
+	&#create-account{
+		text-decoration: none;
+		color: #ffffff;
+	}
+}
+
+
+.primary-background{
+	background-color: #ef5350;
+}
+.secondary-background{
+	background-color: #00bcd4;
+}
+
+.py-4{
+	padding: 0px !important;
+}
+
+.navbar-brand{
+	img{
+	    padding: 0px !important;	
+	}
+}
+    
+#top-header{
+	width: 100%;
+	background: url('../images/cnb-openaccount-home.jpg') 0% 10% / cover no-repeat;
+	height: 657px;
+	padding-top: 0px;
+    background-position: 100% !important;
+}
+.progress{
+	height: auto;
+	justify-content: space-around;
+	border-radius:0px;
+}
+#identity_document{
+	width: 100%;
+}
+
+.nav-fixed{
+	position: relative;
+}
+
+@media only screen and (min-width: 993px){
+	.nav-fixed {
+	    height: auto !important;
+	    z-index: 99 !important;
+	    nav{
+	    	position: fixed;
+	    	width: 100%;
+	    }
+	}
+}
+.btn{
+	border-radius: 0px !important;	
+}
+.btn-canadia{
+	height: 47px !important;
+    // padding: 5px 0px !important;
+    font-size: 18px;
+    background-color: #ef5350 !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+
+.search-container{
+	float: left;
+	margin-right: 15px;
+	input[type=text] {
+	  padding: 6px;
+	  // margin-top: 8px;
+	  font-size: 17px;
+	  border: none;
+	}
+	button {
+	  float: right;
+	  padding: 6px 10px;
+	  // margin-top: 8px;
+	  margin-right: 16px;
+	  background: #ddd;
+	  font-size: 17px;
+	  border: none;
+	  cursor: pointer;
+	}
+}
+
+.navbar-expand-md{
+	.navbar-nav{
+		.dropdown-menu{
+			a{
+				&.dropdown-item{
+					&:before{
+						content: "";					    
+					    width: 10px;
+					    height: 10px;
+					    position: absolute;
+					    background-repeat: no-repeat;
+					    left: 10px;
+					}
+				}
+				&.lang-kh{
+					padding: 0.25rem 2.5rem;
+					&:before{
+						background-image: url(../images/icons/cambodia.svg);						
+					    width: 100px;
+					    height: 18px;
+					    @media screen and (min-width: 37.5em){
+					    	top: 14px;
+					    }
+					}
+					
+				}
+				&.lang-en{
+					padding: 0.25rem 2.5rem;
+					&:before{
+						background-image: url(../images/icons/united-kingdom.svg);						
+					    width: 100px;
+					    height: 18px;
+					    @media screen and (min-width: 37.5em){
+					    	top: 45px;
+					    }
+					}
+				}
+				&.lang-zh{
+					padding: 0.25rem 2.5rem;
+					&:before{
+						background-image: url(../images/icons/china.svg);						
+					    width: 100px;
+					    height: 18px;
+					    @media screen and (min-width: 37.5em){
+					    	top: 75px;
+					    }
+					}
+				}
+			}
+		}
+	}
+}
